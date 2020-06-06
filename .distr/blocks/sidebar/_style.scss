@@ -1,0 +1,123 @@
+.sidebar {
+	display: block;
+	width: 20%;
+	min-width: 170px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+	@media (max-width: 650px) {
+		width: 100%;
+	}
+	&__title {
+		font-size: 16px;
+		line-height: 19px;
+	}
+	&__input {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	label {
+		font-size: 14px;
+		line-height: 17px;
+	}
+	&__top {
+		margin-bottom: 35px;
+		@media (max-width: 650px) {
+			margin-bottom: 20px;
+		}
+		&-title {
+			margin-bottom: 15px;
+		}
+		&-inputs {
+			display: flex;
+		}
+		&-input {
+			position: relative;
+			max-width: 100px;
+			input {
+				width: 100%;
+				font-size: 14px;
+				text-indent: 25px;
+				padding: 7px 0;
+			}
+			label {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 5px;
+				font-size: 14px;
+			}
+			&:first-child {
+				margin-right: 10px;
+			}
+		}
+	}
+	&__center {
+		margin-bottom: 35px;
+		@media (max-width: 650px) {
+			margin-bottom: 20px;
+		}
+		&-title {
+			margin-bottom: 20px;
+		}
+		&-inputs {
+			@media (max-width: 650px) {
+				display: flex;
+				justify-content: space-between;	
+				flex-wrap: wrap;
+			}
+		}
+		&-input {
+			@media (max-width: 650px) {
+				width: 50%;
+				align-items: inherit;
+			}
+		}
+	}
+	&__bottom {
+		margin-bottom: 35px;
+		@media (max-width: 650px) {
+			margin-bottom: 20px;
+		}
+		&-title {
+			margin-bottom: 20px;
+		}
+		&-inputs {
+			@media (max-width: 650px) {
+				display: flex;
+				justify-content: space-between;	
+				flex-wrap: wrap;
+			}
+		}
+		&-input {
+			@media (max-width: 650px) {
+				width: 50%;
+				align-items: inherit;
+			}
+		}
+	}
+	&__buttons {
+		@media (max-width: 650px) {
+			display: flex;
+			justify-content: space-between;
+		}
+		.button {
+			width: 100%;
+			height: 100%;
+			max-width: 185px;
+			min-width: 150px;
+			min-height: 42px;
+			&_filter {
+				background: none;
+				border: 2px solid #FAC663;
+			}
+			&_submit {	
+				background: #FAC663;
+				margin-bottom: 11px;
+			}
+		}
+	}
+}
